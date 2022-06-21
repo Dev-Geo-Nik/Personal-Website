@@ -1,0 +1,58 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@react-spring/types": "^9.4.3",
+    "@react-three/drei": "^8.15.1",
+    "@react-three/fiber": "^7.0.26",
+    "@types/styled-components": "^5.1.24",
+    "@types/three": "^0.138.0",
+    "babel-plugin-styled-components": "^2.0.6",
+    "gatsby": "^4.16.0",
+    "gatsby-plugin-gatsby-cloud": "^4.10.1",
+    "gatsby-plugin-image": "^2.10.1",
+    "gatsby-plugin-manifest": "^4.10.2",
+    "gatsby-plugin-offline": "^5.10.2",
+    "gatsby-plugin-react-helmet": "^5.10.0",
+    "gatsby-plugin-sharp": "^4.10.2",
+    "gatsby-plugin-styled-components": "^5.10.0",
+    "gatsby-source-filesystem": "^4.10.1",
+    "gatsby-transformer-sharp": "^4.10.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-auto-typing": "^1.0.0",
+    "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.3.1",
+    "styled-components": "^5.3.5",
+    "three": "^0.138.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "prettier": "^2.6.0",
+    "typescript": "^4.6.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

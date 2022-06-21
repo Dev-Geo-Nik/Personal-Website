@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", "Helvetica Neue", "Segoe UI",  "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+:root {
+  /* Colors */
+  --clr-primary-1:#085461;
+  --clr-primary-2:#57D0E6;
+  --clr-primary-3:#12C2E0;
+  --clr-primary-4:#255861;
+  --clr-primary-5:#0E95AD;
+
+ 
+
+  /* shadows */
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  /* Text colors  and Tags*/
+  --clr-text-1: #aaaaaa;
+  --clr-white: #fff;
+
+  /* Animations */
+  --transition: all 0.3s ease-in-out;
+
+  /* Typography */
+  --ff-primary: "Lato";
+  --ff-secondary: "Open Sans", sans-serif;
+  --spacing: 0.1rem;
+  --line-height: 1.25;
+
+  /* main width */
+  /* --max-width: 1170px;
+  --fixed-width: 700px; */
+
+  /* utils */
+  --spacing: 0.2rem;
+  --radius: 0.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: var(--spacing);
+}
+
+@media (max-width: 1449px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 1050px) {
+  html {
+    font-size: 65%;
+  }
+}
+@media (max-width: 870px) {
+  html {
+    font-size: 60%;
+  }
+}
