@@ -33,7 +33,7 @@ const Wrapper = styled.section`
   grid-column-gap: 3rem; */
 
   background-color: var(--clr-primary-5);
-  min-height: 100vh;
+  height:100%;
 
 
 
@@ -45,12 +45,11 @@ const Wrapper = styled.section`
  }
 
 
-  .title-container{
-    grid-column: 2/14;
-  }
+
 
   h1{
     text-align: center;
+    font-size: 2rem;
     padding-top:10rem;
     font-family: var(--ff-primary);
     margin-bottom:0.5rem;

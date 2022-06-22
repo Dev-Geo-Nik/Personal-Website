@@ -54,10 +54,10 @@ h2,
 h3,
 h4,
 h5 {
-  letter-spacing: var(--spacing);
+  /* letter-spacing: var(--spacing); */
 }
 
-@media (max-width: 1449px) {
+/* @media (max-width: 1449px) {
   html {
     font-size: 70%;
   }
@@ -72,4 +72,30 @@ h5 {
   html {
     font-size: 60%;
   }
+} */
+/* 1400px */
+@media only screen and (max-width:87.5em) {
+
+
 }
+    /* 1200px - 1025px */
+    @media only screen and (max-width:75em) {
+    
+  }
+
+
+  /* 1024px - 769px  */
+  @media only screen and (max-width:64em) {
+
+
+  }
+
+ /*768px - 481px */
+ @media only screen and (max-width:48em) {
+   
+ }
+
+  /* 480px -  320px  */
+  @media only screen and (max-width:30em) {
+
+    }
