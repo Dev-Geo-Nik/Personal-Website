@@ -75,4 +75,11 @@ h4{
   
      color:#fff;
     }
+
+    @media only screen and (max-width:37.5em) {
+        li{
+            font-size: 1rem;
+          
+        }
+    }
 `

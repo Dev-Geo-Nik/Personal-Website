@@ -23,7 +23,7 @@ const  Home :React.FC = () => {
         
   return (
     <HomeElement >
-          <HamburgerMenu/>
+        <HamburgerMenu/>
         <Canvas  className="canvas"  camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 10]  }} >   
            <ambientLight intensity={1}/>
            {camera && <CameraShake/> }
@@ -38,7 +38,7 @@ const  Home :React.FC = () => {
             <a href="https://github.com/Dev-Geo-Nik" target="_blank">
                 <StaticImage src='../assets/images/github.png' alt='github image' className="images github-image" />
             </a> 
-            <a href="https://www.linkedin.com/in/georgios-nikolaidis-61b040211/" target="_blank">
+             <a href="https://www.linkedin.com/in/georgios-nikolaidis-61b040211/" target="_blank">
                   <StaticImage src='../assets/images/linkedin.png' alt='github image'  className="images linkedin-image" />
             </a>
        </div>
@@ -46,7 +46,7 @@ const  Home :React.FC = () => {
             <div className="h1-tag-open"></div>
             <h1 className="title">Hello, I'm <span className="name">George Nikolaidis</span> a front-end web developer."Welcome to my portfolio".</h1>
             <div className="links-container">
-                <Link to='/work' className='links link-btn'><span className="text-btn">View my work</span>  <BsArrowRight  className="arrow-icon"/></Link>
+                <Link to='/projects' className='links link-btn'><span className="text-btn">View my projects</span>  <BsArrowRight  className="arrow-icon"/></Link>
             </div>
         </div>
    
@@ -107,7 +107,7 @@ const HomeElement = styled.div`
         position: absolute;
         gap:1rem;
         top:5rem;
-        right: 2rem;
+        right: 1rem;
         z-index: 2;
         display:flex;
         flex-direction: column;
@@ -167,7 +167,7 @@ const HomeElement = styled.div`
         transition:var(--transition) ;
         display:flex;
         align-items:center;
-        /* cursor: url("./images/spaceship.svg"),auto; */
+   
         
     }
 
@@ -211,36 +211,32 @@ const HomeElement = styled.div`
         width:2rem;
         border-radius: 5px;
         cursor:pointer;
-     
-
        
     }
 
 
-    @media (max-width: 870px) {
-        .title{
-            font-size: 1.5rem;
-        }
-    }
-
-
-    @media (max-width: 600px) {
-        .title{
-            font-size: 1.5rem;
-            line-height:2rem;
-        }
+      /* 1024px - 769px  */
+    @media only screen and (max-width:64em) {
         .html-container{
-        width: 80%;
-        }
-    }
-    @media (max-width: 500px) {
-        .title{
-            font-size: 1.4rem;
-            line-height:2rem;
+            top: 60%;
+            width:90%;
         }
 
-        
+
     }
-  
-  
+
+
+    /* 600 */
+    @media only screen and (max-width:37.5em) {
+        .title,.name{
+            font-size:1.3rem;
+        }
+
+        .text-btn,.arrow-icon{
+        font-size:1.2rem;
+     
+   
+    }
+
+    }
  `

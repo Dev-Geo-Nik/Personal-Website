@@ -35,10 +35,14 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom:1rem;
    
     h4{
         /* text-align:center; */
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
+
+ 
+  
 
 `

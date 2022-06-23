@@ -26,23 +26,23 @@ a{
   display: flex;
   align-items: center;
   color:#fff;
-  font-size: 1.4rem;
-  padding: 0.4rem 1rem;
+  font-size: 1.3rem;
+  padding: 0.6rem 1rem;
   border-radius: 5px;
   transition: var(--transition);
 }
 
 .icons{
     margin-right: 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   
 }
 .app-link{
     margin-right:2rem;
-    background-color:#DB9F4B;
+    background-color:var(--clr-primary-2);
 
     &:hover{
-        background-color:#eeb059;
+        background-color:var(--clr-primary-4);
     }
 }
 
@@ -50,8 +50,36 @@ a{
     background-color:#24292F;
 
     &:hover{
-        background-color:#363a3f;
+        background-color:#555b63;
     }
 }
+/* 600 */
+@media only screen and (max-width:37.5em) {
+     
+        a{
+            font-size: 1rem;
+            padding: 0.4rem 1rem;
+        }
+        .icons{
+            margin-right: 0.5rem;
+            font-size: 1rem;
+        
+        }
+
+        .app-link{
+            margin-right: 0.5rem;
+        }
+    }
+
+
+@media only screen and (max-width:22.5em) {
+     
+        a,.icons{
+            font-size: 0.8rem;
+           
+        }
+
+       
+    }
 
 `

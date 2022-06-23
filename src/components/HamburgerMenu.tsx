@@ -61,7 +61,7 @@ const Wrapper = styled.div`
 .hamburger-container{
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 0rem;
     z-index:8;
     padding:0.9rem;
     border-radius: 50%;

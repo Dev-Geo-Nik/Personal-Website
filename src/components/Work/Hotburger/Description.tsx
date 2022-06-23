@@ -42,4 +42,10 @@ const Wrapper = styled.div`
         font-size: 1.3rem;
         list-style: none;
     }
+
+    @media only screen and (max-width:37.5em) {
+        li,.description{
+            font-size: 1rem;
+        }
+    }
 `

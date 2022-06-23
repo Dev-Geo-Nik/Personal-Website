@@ -57,22 +57,7 @@ h5 {
   /* letter-spacing: var(--spacing); */
 }
 
-/* @media (max-width: 1449px) {
-  html {
-    font-size: 70%;
-  }
-}
 
-@media (max-width: 1050px) {
-  html {
-    font-size: 65%;
-  }
-}
-@media (max-width: 870px) {
-  html {
-    font-size: 60%;
-  }
-} */
 /* 1400px */
 @media only screen and (max-width:87.5em) {
 

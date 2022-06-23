@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Benchmark from './Benchmark';
 import Buttons from './Buttons';
 import Description from './Description';
+import Note from './Note';
 import Slideshow from './Slideshow';
 import Stack from './Stack';
 
@@ -12,18 +13,18 @@ const  Hotburger :React.FC = () => {
 <Wrapper>
     
               <div className="title-container">
-                <h4>01. HOT<span>BURGER</span></h4>
+                <h4>01. HOT<span className="logo-text">BURGER</span></h4>
                   <h4 className="type">E-Commerce Restaurant </h4>
               </div>
               <Slideshow/>
             <div className="benchmark-container">
-              <Benchmark  percent="99" title="Mobile Benchmark"/>
+              <Benchmark  percent="99" title="Mobile Benchmark" />
               <Benchmark  percent="99" title="Desktop Benchmark"/>
               <Benchmark   percent="86" title="Seo Benchmark"/> 
             </div>
             <Description/>
-            <Stack/>
-            <p className="note">Note:* to use stripe checkout use the following details. email: test@gmail.com, card information: 4242 4242 4242 4242 , expiration date: 12/28 , cvv: 123 , name: test.</p>
+            <Stack/> 
+            <Note/>  
             <Buttons/>
     
         
@@ -32,12 +33,14 @@ const  Hotburger :React.FC = () => {
 };
 
 export default Hotburger;
-
+  
 
 const Wrapper = styled.div`
   margin: 5rem  auto  0 auto;
-  max-width:60rem;
-
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
 
   
   h4{
@@ -46,7 +49,7 @@ const Wrapper = styled.div`
     font-size: 1.1rem;
   }
 
-  span{
+  .logo-text{
     color:#DB9F4B;
   }
 
@@ -70,22 +73,51 @@ const Wrapper = styled.div`
       justify-content:space-around;
       padding: 2rem 0;
   }
-  .note{
-    color:#fff;
-    font-size: 1.4rem;
-  }
+
+
 
 
   /* 1400px */
 @media only screen and (max-width:87.5em) {
-
+     width: 80%;
 }
 
   /* 1024px - 769px  */
   @media only screen and (max-width:64em) {
-    margin: 0.5rem auto;
-    /* max-width:50rem; */
+   
+    width: 90%;
   
 }
+
+ /*768px - 481px */
+ @media only screen and (max-width:48em) {
+ 
+  }
+
+  /* 600px - */
+ @media only screen and (max-width:37.5em) {
+  /* width: 96%; */
+  .benchmark-container{    
+      flex-direction: column;
+  
+  }
+    .type,.logo-text,h4{
+      font-size: 1rem;
+    }
+
+
+
+  }
+
+/* 360px */
+  @media only screen and (max-width:22.5em) {
+     
+     .type,.logo-text,h4{
+      font-size: 0.9rem;
+    }
+
+    
+ }
+
 
 `

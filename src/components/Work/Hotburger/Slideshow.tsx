@@ -2,6 +2,11 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+
+
+
+
+
 const  Slideshow :React.FC = () => {
 
      const [slideIndex ,setSlideIndex] = useState(1);
@@ -21,38 +26,31 @@ const  Slideshow :React.FC = () => {
             }
             setSlideIndex(slideIndex - 1)
     }
-
+    
   return (
 <Wrapper>
     <div className="slideshow-container">
+       
+      
         <div className={slideIndex === 1 ? "fade show":"mySlides fade"}>
-            {/* <div className="numbertext">1 / 3</div> */}
-            <StaticImage src='../../../assets/images/projects/hotburger/menu.png'  alt="hotburger menu page" className="images"/>
-            {/* <div className="page-text">Menu Page</div> */}
+            <StaticImage src='../../../assets/images/projects/hotburger/menu.png'  alt="hotburger menu page" className="images" placeholder="tracedSVG" />
         </div>
 
         <div className={slideIndex === 2 ? "fade show":"mySlides fade"}>
-            {/* <div className="numbertext">2 / 3</div> */}
-            <StaticImage src='../../../assets/images/projects/hotburger/home.png'  alt="hotburger home page" className="images"/>
-            {/* <div className="page-text">Home page</div> */}
+            <StaticImage src='../../../assets/images/projects/hotburger/home.png'  alt="hotburger home page" className="images" placeholder="tracedSVG" />        
         </div>
 
-        <div className={slideIndex === 3 ? "fade show":"mySlides fade"}>
-            {/* <div className="numbertext">3 / 3</div> */}
-            <StaticImage src='../../../assets/images/projects/hotburger/desktop.png'  alt="hotburger desktop benchmark image" className="images"/>
-            {/* <div className="page-text">Desktop benchmark</div> */}
+        <div className={slideIndex === 3 ? "fade show":"mySlides fade"}>     
+            <StaticImage src='../../../assets/images/projects/hotburger/desktop.png'  alt="hotburger desktop benchmark image" className="images" placeholder="tracedSVG"/>
         </div>
 
         <div className={slideIndex === 4 ? "fade show":"mySlides fade"}>
-            {/* <div className="numbertext">4 / 4</div> */}
-            <StaticImage src='../../../assets/images/projects/hotburger/mobile.png'  alt="hotburger mobile benchmark image" className="images"/>
-            {/* <div className="page-text">Mobile benchmark</div> */}
+            <StaticImage src='../../../assets/images/projects/hotburger/mobile.png'  alt="hotburger mobile benchmark image" className="images" placeholder="tracedSVG" />
         </div>
         <div className={slideIndex === 5 ? "fade show":"mySlides fade"}>
-            {/* <div className="numbertext">5 / 5</div> */}
-            <StaticImage src='../../../assets/images/projects/hotburger/seo.png'  alt="hotburger mobile benchmark image" className="images"/>
-            {/* <div className="page-text">Seo benchmark</div> */}
+            <StaticImage src='../../../assets/images/projects/hotburger/seo.png'  alt="hotburger mobile benchmark image" className="images" placeholder="tracedSVG" />   
         </div>
+        
         {/* <!-- Next and previous buttons --> */}
         <a className="prev" onClick={handleClickLeft}>&#10094;</a>
         <a className="next" onClick={handleClickRight}>&#10095;</a>
@@ -80,29 +78,33 @@ const Wrapper = styled.div`
 
     .slideshow-container{
         max-width: 100%;
-        
         position: relative;
+       
      }
+ 
 
-    .show{
+    .show{     
         display: block;
-        width: 100%;
-        height:29rem;
-        
+         width: 100%;
+     
     }
+
      /* Hide the images by default */
      .mySlides {
         display: none;
         width: 100%;
-        height:29rem;
-        
-       
+  
+    
+    
         }
 
     .images{
         width: 100%;
-        /* height: 100%; */
+        height:auto;
         border-radius: 5px;
+        object-fit:fill;
+       
+     
         
     }
 
@@ -116,7 +118,7 @@ const Wrapper = styled.div`
         position: absolute;
         top: 50%;
         width: auto;
-        /* margin-top: -22px; */
+        margin-top: -22px;
         padding: 16px;
         color:  var(--clr-primary-3);
         font-weight: bold;
@@ -196,6 +198,20 @@ const Wrapper = styled.div`
 
   /* 1024px - 769px  */
   @media only screen and (max-width:64em) {
-       
+    
     }
+
+
+     /*768px - 481px */
+ @media only screen and (max-width:48em) {
+    .prev, .next {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+    }
+}
 `

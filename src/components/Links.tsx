@@ -20,7 +20,7 @@ const  Links :React.FC<Props> = (props) => {
         <ul className="list-container">
                 
                <Link className="link" to="/" onClick={onClickHandler}    activeClassName="active"> Home </Link>
-               <Link className="link" to="/work" onClick={onClickHandler}    activeClassName="active"> Work </Link>
+               <Link className="link" to="/projects" onClick={onClickHandler}    activeClassName="active"> Projects </Link>
         
        
         </ul>

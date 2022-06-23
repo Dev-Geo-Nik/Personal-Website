@@ -40,8 +40,8 @@ const Wrapper = styled.section`
  .logo{
   width: 6rem;
   position:absolute;
-  top: 2rem;
-  left: 4rem;
+  top: 1rem;
+  left: 1rem;
  }
 
 
