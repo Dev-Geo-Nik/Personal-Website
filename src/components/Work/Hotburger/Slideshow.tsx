@@ -33,22 +33,22 @@ const  Slideshow :React.FC = () => {
        
       
         <div className={slideIndex === 1 ? "fade show":"mySlides fade"}>
-            <StaticImage src='../../../assets/images/projects/hotburger/menu.png'  alt="hotburger menu page" className="images" placeholder="tracedSVG" />
+            <StaticImage src='../../../assets/images/projects/hotburger/menu.png'  alt="hotburger menu page" className="images" placeholder="tracedSVG" objectFit='fill' />
         </div>
 
         <div className={slideIndex === 2 ? "fade show":"mySlides fade"}>
-            <StaticImage src='../../../assets/images/projects/hotburger/home.png'  alt="hotburger home page" className="images" placeholder="tracedSVG" />        
+            <StaticImage src='../../../assets/images/projects/hotburger/home.png'  alt="hotburger home page" className="images" placeholder="tracedSVG" objectFit='fill' />        
         </div>
 
         <div className={slideIndex === 3 ? "fade show":"mySlides fade"}>     
-            <StaticImage src='../../../assets/images/projects/hotburger/desktop.png'  alt="hotburger desktop benchmark image" className="images" placeholder="tracedSVG"/>
+            <StaticImage src='../../../assets/images/projects/hotburger/desktop.png'  alt="hotburger desktop benchmark image" className="images" placeholder="tracedSVG" objectFit='fill'/>
         </div>
 
         <div className={slideIndex === 4 ? "fade show":"mySlides fade"}>
-            <StaticImage src='../../../assets/images/projects/hotburger/mobile.png'  alt="hotburger mobile benchmark image" className="images" placeholder="tracedSVG" />
+            <StaticImage src='../../../assets/images/projects/hotburger/mobile.png'  alt="hotburger mobile benchmark image" className="images" placeholder="tracedSVG"  objectFit='fill'/>
         </div>
         <div className={slideIndex === 5 ? "fade show":"mySlides fade"}>
-            <StaticImage src='../../../assets/images/projects/hotburger/seo.png'  alt="hotburger mobile benchmark image" className="images" placeholder="tracedSVG" />   
+            <StaticImage src='../../../assets/images/projects/hotburger/seo.png'  alt="hotburger mobile benchmark image" className="images" placeholder="tracedSVG" objectFit='fill'/>   
         </div>
         
         {/* <!-- Next and previous buttons --> */}
@@ -93,6 +93,7 @@ const Wrapper = styled.div`
      .mySlides {
         display: none;
         width: 100%;
+
   
     
     
@@ -102,10 +103,8 @@ const Wrapper = styled.div`
         width: 100%;
         height:auto;
         border-radius: 5px;
-        object-fit:fill;
-       
-     
-        
+      
+
     }
 
    
@@ -137,15 +136,7 @@ const Wrapper = styled.div`
         background-color: var(--clr-primary-4)
         }
 
-        /* Number text (1/3 etc) */
-        .numbertext {
-        color:  var(--clr-primary-3);
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;    
-        z-index:2;
-      }
+    
 
       .dots-container{
             text-align: center;
@@ -212,6 +203,9 @@ const Wrapper = styled.div`
     .dot {
         height: 15px;
         width: 15px;
+    }
+    .images{
+        height: 20rem;
     }
 }
 `

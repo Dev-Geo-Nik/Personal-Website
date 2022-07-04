@@ -10,6 +10,10 @@ interface Props{
     hovered:boolean
 }
 
+
+const active ={
+  display: "none"
+}
 const  Links :React.FC<Props> = (props) => {
 
     const {onClickHandler,setHovered,hovered} = props;
@@ -19,8 +23,8 @@ const  Links :React.FC<Props> = (props) => {
          
         <ul className="list-container">
                 
-               <Link className="link" to="/" onClick={onClickHandler}    activeClassName="active"> Home </Link>
-               <Link className="link" to="/projects" onClick={onClickHandler}    activeClassName="active"> Projects </Link>
+               <Link className="link" to="/" onClick={onClickHandler}    activeStyle={active}> Home </Link>
+               <Link className="link" to="/projects" onClick={onClickHandler}    activeStyle={active} > Projects </Link>
         
        
         </ul>
@@ -65,7 +69,7 @@ const LinksElement = styled.div`
     
     .active{
       display: none;
-      
+      color:red;
     }
   
 

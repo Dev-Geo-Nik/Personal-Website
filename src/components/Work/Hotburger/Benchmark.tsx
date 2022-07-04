@@ -22,6 +22,7 @@ const  Benchmark :React.FC<Props> = ({percent,title}) => {
         primaryColor={["#00CC66","#34e08a"]}
         // secondaryColor="#d4d4d4"
         fill="#fff"
+        className="progress"
          />
 </Wrapper>
 );
@@ -42,7 +43,6 @@ const Wrapper = styled.div`
         margin-bottom: 0.5rem;
     }
 
- 
-  
+
 
 `

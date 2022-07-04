@@ -99,6 +99,7 @@ const Wrapper = styled.div`
   /* width: 96%; */
   .benchmark-container{    
       flex-direction: column;
+   
   
   }
     .type,.logo-text,h4{

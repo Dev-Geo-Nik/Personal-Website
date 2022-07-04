@@ -218,7 +218,7 @@ const HomeElement = styled.div`
       /* 1024px - 769px  */
     @media only screen and (max-width:64em) {
         .html-container{
-            top: 60%;
+            
             width:90%;
         }
 
